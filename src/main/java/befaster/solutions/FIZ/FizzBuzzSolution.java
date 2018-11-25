@@ -18,4 +18,14 @@ public class FizzBuzzSolution {
     	
     }
     
+    public boolean isDeluxe(Integer num) {
+    	String s = Integer.toString(num);
+    	char[] s1 = s.toCharArray();
+    	int len = s.length();
+    	for(int i =1; i<len; i++) {
+    		if(s1[i] != s1[0])) {
+    			
+    		}
+    	}
+    }
 }
