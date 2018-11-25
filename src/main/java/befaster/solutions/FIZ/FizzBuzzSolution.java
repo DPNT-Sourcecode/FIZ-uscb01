@@ -6,6 +6,9 @@ public class FizzBuzzSolution {
     
     	if((number%3==0) || (number.toString().contains("3"))){
     		if((number%5==0) || (number.toString().contains("5"))){
+    			if (isDeluxe(number)) {
+    				return "fizz buzz deluxe";
+    			}
     			return "fizz buzz";
     		} else {
     			return "fizz";
@@ -23,9 +26,10 @@ public class FizzBuzzSolution {
     	char[] s1 = s.toCharArray();
     	int len = s.length();
     	for(int i =1; i<len; i++) {
-    		if(s1[i] != s1[0])) {
-    			
+    		if(s1[i] != s1[0]) {
+    			return false;
     		}
     	}
+    	return true;
     }
 }
