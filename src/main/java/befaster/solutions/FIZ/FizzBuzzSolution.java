@@ -11,10 +11,16 @@ public class FizzBuzzSolution {
     			}
     			return "fizz buzz";
     		} else {
+    			if (isIdentical(number) && (number > 10)) {
+    				return "fizz deluxe";
+    			}
     			return "fizz";
     		}
     	}
     		else if ((number%5==0) || (number.toString().contains("5"))){
+    			if (isIdentical(number) && (number > 10)) {
+    				return "buzz deluxe";
+    			}
     			return "buzz";
     		} else if(isIdentical(number) && (number > 10)){
     			return "deluxe";
