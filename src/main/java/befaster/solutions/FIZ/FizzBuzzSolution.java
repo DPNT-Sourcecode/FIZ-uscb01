@@ -6,7 +6,7 @@ public class FizzBuzzSolution {
     
     	if((number%3==0) || (number.toString().contains("3"))){
     		if((number%5==0) || (number.toString().contains("5"))){
-    			if (isIdentical(number) && (number > 10) ) {
+    			if (isIdentical(number) && (number > 10)) {
     				return "fizz buzz deluxe";
     			}
     			return "fizz buzz";
@@ -16,6 +16,8 @@ public class FizzBuzzSolution {
     	}
     		else if ((number%5==0) || (number.toString().contains("5"))){
     			return "buzz";
+    		} else if(isIdentical(number) && (number > 10)){
+    			return "deluxe";
     		} else
         		return Integer.toString(number);
     	
