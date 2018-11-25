@@ -6,7 +6,7 @@ public class FizzBuzzSolution {
     
     	if((number%3==0) || (number.toString().contains("3"))){
     		if((number%5==0) || (number.toString().contains("5"))){
-    			if (isDeluxe(number)) {
+    			if (isIdentical(number) && (number > 10) ) {
     				return "fizz buzz deluxe";
     			}
     			return "fizz buzz";
@@ -21,7 +21,7 @@ public class FizzBuzzSolution {
     	
     }
     
-    public boolean isDeluxe(Integer num) {
+    public boolean isIdentical(Integer num) {
     	String s = Integer.toString(num);
     	char[] s1 = s.toCharArray();
     	int len = s.length();
