@@ -10,7 +10,7 @@ public class FizzBuzzSolution {
     	} else if (number%5==0) {
     		return "buzz";
     	} else
-    		return "example 1";
+    		return Integer.toString(number);
     }
 
 }
