@@ -11,11 +11,6 @@ public class FizzBuzzSolution {
     			}
     			return "fizz buzz deluxe";
     		}
-    		if(number%2 != 0) {
-    			return "fizz fake deluxe";
-    		} else {
-    			return "fizz deluxe";
-    		}
     		return "fizz buzz";
     	} else if((number%5==0) && (number.toString().contains("5"))) {
     		if(number%2 != 0) {
