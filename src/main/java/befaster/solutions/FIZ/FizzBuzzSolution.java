@@ -3,11 +3,17 @@ package befaster.solutions.FIZ;
 public class FizzBuzzSolution {
 
     public String fizzBuzz(Integer number) {
-    
+    if(isDeluxe(number)) {
+    	if(isFake(number)) {
+    		return fizzBuzzNumber(number)+" fake deluxe";
+    	} else {
+    		return 
+    	}
+    }
     
     }
     
-    public String fizzbuzznumber(Integer num) {
+    public String fizzBuzzNumber(Integer num) {
     	if((num%3==0)&&(num%5==0))  {
     		return "fizz buzz";
     	} else if(num%3 == 0) {
@@ -30,9 +36,9 @@ public class FizzBuzzSolution {
     
     public boolean isFake(Integer num3) {
     	if(num3%2 != 0) {
-    		return false;
-    	} else {
     		return true;
+    	} else {
+    		return false;
     	}
     }
 }
