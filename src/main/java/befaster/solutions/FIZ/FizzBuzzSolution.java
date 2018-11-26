@@ -27,7 +27,7 @@ public class FizzBuzzSolution {
     		return "fizz buzz";
     	} else if((num%3 == 0)||(num.toString().contains("3"))) {
     		return "fizz";
-    	} else if((num%5 ==0)||(num.toString().contains("3"))) {
+    	} else if((num%5 ==0)||(num.toString().contains("5"))) {
     		return "buzz";
     	} else 
     		return Integer.toString(num);
