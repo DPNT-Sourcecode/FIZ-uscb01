@@ -20,12 +20,12 @@ public class FizzBuzzSolution {
 				return "buzz fake deluxe";
 			}
 			return "buzz deluxe"; 		
-    	} else if (number%3 == 0) {
-    		if(number%5 ==0) {
+    	} else if((number%3==0) || (number.toString().contains("3"))) {
+    		if((number%5==0) || (number.toString().contains("5"))) {
     			return "fizz buzz";
     		}
     		return "fizz";
-    	} else if(number%5 == 0) {
+    	} else if((number%5==0) || (number.toString().contains("5"))) {
     		return "buzz";
     	} else {
     		return Integer.toString(number);
