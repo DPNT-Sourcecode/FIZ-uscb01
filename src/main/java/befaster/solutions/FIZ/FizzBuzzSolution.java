@@ -7,9 +7,10 @@ public class FizzBuzzSolution {
     	if(isFake(number)) {
     		return fizzBuzzNumber(number)+" fake deluxe";
     	} else {
-    		return 
+    		return fizzBuzzNumber(number)+" deluxe";
     	}
     }
+    return fizzBuzzNumber(number);
     
     }
     
