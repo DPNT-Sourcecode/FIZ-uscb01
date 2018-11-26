@@ -15,11 +15,19 @@ public class FizzBuzzSolution {
     }
     
     public String fizzBuzzNumber(Integer num) {
-    	if((num%3==0)&&(num%5==0))  {
+    	if(
+    			((num%3==0)&&(num%5==0))
+    			||
+    			((num.toString().contains("3")) && (num.toString().contains("5")))
+    			||
+    			((num.toString().contains("3")) && (num%5==0))
+    			||
+    			((num.toString().contains("5")) && (num%3==0))    			
+    			)  {
     		return "fizz buzz";
-    	} else if(num%3 == 0) {
+    	} else if((num%3 == 0)||(num.toString().contains("3"))) {
     		return "fizz";
-    	} else if(num%5 ==0) {
+    	} else if((num%5 ==0)||(num.toString().contains("3"))) {
     		return "buzz";
     	} else 
     		return Integer.toString(num);
