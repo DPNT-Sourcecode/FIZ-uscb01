@@ -28,7 +28,7 @@ public class FizzBuzzSolution {
 			}
     		return "fizz";
     	} else if((number%5==0) || (number.toString().contains("5"))) {
-    		else if((number%5==0) && (number.toString().contains("5"))) {
+    		if((number%5==0) && (number.toString().contains("5"))) {
 				return "buzz deluxe";
 			}
     		return "buzz";
